@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style src="style.css"></style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Euller Trindade</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="./img/et.png" alt="Logo-et" />
+        <a class="logo-nome" href="#id-main"> Euller Trindade</a>
+      </div>
+
+      <nav id="nav">
+        <button
+          aria-label="Abrir menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu">
+          <li><a href="#id-main"> Início </a></li>
+          <li><a href="#id-quemsou"> Quem sou? </a></li>
+          <li><a href="#id-hab"> Habilidades </a></li>
+          <li><a href="#id-projetos"> Projetos </a></li>
+          <li><a href="#id-contatos"> Contatos </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="class-main">
+      <section class="conteudo-principal" id="id-main">
+        <div class="principal-nomes">
+          <div class="principal-textos">
+            <h1 class="principal-h1">
+              &lt;Olá, me chamo
+              <br />
+              <strong class="principal-meunome"> Euller Trindade/&gt; </strong>
+            </h1>
+
+            <h3 class="principal-h3 typing-animation">Dev Front-end</h3>
+          </div>
+
+          <div class="div-botoes">
+            <a class="botao-contato" href="#id-contatos">Contato</a>
+            <a class="botao-curriculo" href="Euller.pdf" download>
+              Currículo
+              <ion-icon
+                class="icon-download"
+                name="arrow-down-outline"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+        <img class="img-bemvindo" src="./img/bemvindo.png" alt="" />
+      </section>
+
+      <section class="conteudo-quemsou" id="id-quemsou">
+        <div class="texto-minhavida">
+          <h1 class="titulos-h1">Quem Sou?</h1>
+
+          <div class="div-imagemquemsou">
+            <img
+              src="./img/minhaFoto.jpg"
+              alt="Imagem quem sou"
+              class="imagem-quemsou"
+            />
+          </div>
+        </div>
+        <p class="meu-texto">
+          <br />
+          Olá, meu nome é Euller. Desde criança sempre fui muito curioso e
+          apaixonado por tecnologia, por isso, comecei a estudar programação por
+          conta própria, com tutoriais e também com o curso de Front-end na
+          Alura.<br />
+          Atualmente, tenho estudado React e buscando a cada dia aprimorar meu
+          conhecimento nesse maravilhoso mundo da programação.
+        </p>
+      </section>
+
+      <section class="conteudo-habilidades" id="id-hab">
+        <h1 class="titulos-h1">Habilidades</h1>
+
+        <div class="div-habilidades">
+          <div class="div-css div">
+            <div class="div-inicial-css">
+              <p class="titulo-box">CSS 3</p>
+            </div>
+
+            <div class="div-segunda-habilidades">
+              <img src="./img/logos_css-3.png" class="img-hab" />
+            </div>
+          </div>
+
+          <div class="div-html div">
+            <div class="div-inicial-html">
+              <p class="titulo-box">HTML 5</p>
+            </div>
+
+            <div class="div-segunda-habilidades">
+              <img src="./img/logos_html-5.png" />
+            </div>
+          </div>
+
+          <div class="div-js div">
+            <div class="div-inicial-js">
+              <p class="titulo-box">JAVASCRIPT</p>
+            </div>
+            <div class="div-segunda-habilidades">
+              <img src="./img/logos_javascript.png" />
+            </div>
+          </div>
+
+          <div class="div-react div">
+            <div class="div-inicial-react">
+              <p class="titulo-box">REACT</p>
+            </div>
+            <div class="div-segunda-habilidades">
+              <img class="img-react" src="./img/React_logo.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sessao-projetos" id="id-projetos">
+        <div class="sessao-header">
+          <h1>Projetos</h1>
+        </div>
+        <div class="projetos">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="./img/todo-list.png" alt="imagem do projeto ToDo" />
+            </div>
+            <div class="card-info">
+              <h2>ToDo List</h2>
+              <h3>HTML, CSS, Javascript.</h3>
+              <p>
+                Criei essa ToDo List ultilizando HTML, CSS e Javascript. Com ela
+                você consegue anotar as tarefas que precisa realizar.
+              </p>
+              <a
+                href="https://euller-trindade.github.io/Todo-list/"
+                class="cust_btn botao"
+              >
+                Website
+              </a>
+              <a
+                href="https://github.com/Euller-trindade/Todo-list"
+                class="cust_btn botao"
+                >GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img
+                src="./img/formulario.png"
+                alt="imagem do projeto formulário"
+              />
+            </div>
+            <div class="card-info">
+              <h2>Formulário</h2>
+              <h3>HTML, CSS, Javascript.</h3>
+              <p>
+                Desenvolvi esse pequeno formulário ultilizando HTML, CSS e
+                Javascript, como forma de aprendizado em validações de tela de
+                cadastro.
+              </p>
+              <a
+                href="https://euller-trindade.github.io/formulario/"
+                class="cust_btn botao"
+              >
+                Website
+              </a>
+              <a
+                href="https://euller-trindade.github.io/formulario/"
+                class="cust_btn botao"
+                >GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img
+                src="./img/imc.png"
+                alt="imagem do projeto calculadora-imc"
+              />
+            </div>
+            <div class="card-info">
+              <h2>Calculadora-IMC</h2>
+              <h3>HTML, CSS, Javascript.</h3>
+              <p>
+                Projeto desenvolvido com HTML, CSS e Javascript. <br />
+                Preencha todos os campos e descubra qual é seu índice de massa
+                corporal.
+              </p>
+              <a
+                href="https://euller-trindade.github.io/calculadora-imc/"
+                class="cust_btn botao"
+              >
+                Website
+              </a>
+              <a
+                href="https://euller-trindade.github.io/calculadora-imc/"
+                class="cust_btn botao"
+                >GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="./img/estimate.png" alt="imagem do projeto Estimate" />
+            </div>
+            <div class="card-info">
+              <h2>Estimate</h2>
+              <h3>React.</h3>
+              <p>
+                Projeto desenvolvido com React em que você pode gerenciar os
+                custos dos seus projetos.
+              </p>
+              <a
+                href="https://github.com/Euller-trindade/Estimate"
+                class="cust_btn botao"
+                >GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="conteudo-contatos" id="id-contatos">
+        <h1 class="titulos-h1 entre-contato">Entre em Contato</h1>
+
+        <div class="conteudo-nomes-contatos">
+          <p class="titulo-da-div-contatos">
+            Redes sociais e formas de contato:
+          </p>
+
+          <div class="links-contatos">
+            <div class="contatos-primeira-coluna">
+              <div class="contato">
+                <img src="./img/git.png" alt="logo o git" class="logo-do-git" />
+                <a
+                  href="https://github.com/Euller-trindade"
+                  target="_blank"
+                  class="botao-rede"
+                >
+                  Github
+                </a>
+              </div>
+
+              <div class="contato">
+                <img
+                  src="./img/gmail.png"
+                  alt="logo do gmail"
+                  class="logo-do-gmail"
+                />
+                <a
+                  href="https://eullercarregosa@gmail.com"
+                  target="_blank"
+                  class="botao-rede"
+                >
+                  Email
+                </a>
+              </div>
+            </div>
+
+            <div class="contatos-segunda-coluna">
+              <div class="contato">
+                <img
+                  src="./img/linkedin.png"
+                  alt="logo do linkedin"
+                  class="logo-do-linkedin"
+                />
+                <a
+                  href="https://www.linkedin.com/in/euller-trindade/"
+                  target="_blank"
+                  class="botao-rede"
+                >
+                  Linkedin
+                </a>
+              </div>
+              <div class="contato">
+                <img
+                  src="./img/whatsapp_logo.png"
+                  alt="logo do whatsapp"
+                  class="logo-do-whatsapp"
+                />
+                <a
+                  href="https://api.whatsapp.com/send?phone=5575999670644"
+                  target="_blank"
+                  class="botao-rede"
+                >
+                  Whatsapp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="mobile-navbar.js"></script>
+
+    <footer>
+      <p>&copy; Criado e desenvolvido por Euller Trindade</p>
+    </footer>
+  </body>
+</html>
