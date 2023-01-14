@@ -2,17 +2,16 @@
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-
 body {
   background: #0a051b;
 }
 
 /*====== cabeçalho ====== */
+
 #header {
   display: flex;
   align-items: center;
@@ -31,13 +30,11 @@ body {
   position: fixed;
   width: 100%;
 }
-
 .logo {
   align-items: center;
   display: flex;
   gap: 15px;
 }
-
 #nav {
   display: flex;
   align-items: center;
@@ -55,7 +52,6 @@ body {
   transition: 0.5s;
 }
 #menu a:hover {
-  color: #000000;
   transform: scale(1.1);
 }
 #btn-mobile {
@@ -87,7 +83,6 @@ body {
   border-bottom: 2px solid #fff;
   gap: 90px;
 }
-
 .principal-nomes {
   display: flex;
   justify-content: center;
@@ -95,27 +90,23 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-
 .principal-textos {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 30px;
 }
-
 .principal-h1 {
   font-weight: normal;
   font-size: 38px;
   color: #fff;
 }
-
 .principal-meunome {
   font-weight: bold;
   font-size: 55px;
-  color: rgb(187, 0, 47);
+  color: #bb002f;
   width: 100%;
 }
-
 .principal-h3 {
   border-right: 2px solid rgb(150, 151, 150);
   font-style: normal;
@@ -151,7 +142,6 @@ body {
   width: 100%;
   justify-content: space-between;
 }
-
 .botao-contato {
   display: flex;
   align-items: center;
@@ -163,14 +153,13 @@ body {
   font-weight: bold;
   transition: 0.5s;
   border-bottom: 2px solid #fff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
+  border-right: 2px solid #bb002f;
+  border-left: 2px solid #bb002f;
   border-top: 2px solid #fff;
   border-radius: 25px;
   background: transparent;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
 }
-
 .botao-curriculo {
   display: flex;
   align-items: center;
@@ -182,21 +171,17 @@ body {
   font-weight: bold;
   transition: 0.5s;
   border-bottom: 2px solid #fff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
+  border-right: 2px solid #bb002f;
+  border-left: 2px solid #bb002f;
   border-top: 2px solid #fff;
   border-radius: 25px;
   background: transparent;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
 }
-
 .botao-contato:hover {
-  color: #000000;
   transform: scale(1.1);
 }
-
 .botao-curriculo:hover {
-  color: #000000;
   transform: scale(1.1);
 }
 .icon-download {
@@ -209,6 +194,7 @@ body {
   width: 40%;
   height: 40%;
 }
+
 /* conteudo secundario - quem sou */
 
 .conteudo-quemsou {
@@ -224,7 +210,6 @@ body {
 .div-imagem-quemsou {
   display: flex;
 }
-
 .imagem-quemsou {
   display: flex;
   width: 300px;
@@ -239,7 +224,6 @@ body {
   align-items: flex-start;
   width: 45%;
 }
-
 .titulos-h1 {
   display: flex;
   font-weight: bold;
@@ -247,7 +231,6 @@ body {
   color: #fff;
   margin-bottom: 100px;
 }
-
 .meu-texto {
   background: #fff;
   border-radius: 5px;
@@ -262,6 +245,7 @@ body {
   color: rgb(187, 0, 47);
   font-weight: bold;
 }
+
 /* conteudo terciario - habilidades */
 
 .conteudo-habilidades {
@@ -290,7 +274,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.div-inicial-css {
+.div-inicial-css,
+.div-inicial-html,
+.div-inicial-js,
+.div-inicial-react {
   display: flex;
   width: 100%;
   height: 50px;
@@ -298,15 +285,14 @@ body {
   color: rgb(187, 0, 47);
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #fff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
+  border-right: 2px solid #bb002f;
+  border-left: 2px solid #bb002f;
   border-top: 2px solid #fff;
   border-radius: 15px;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
 }
-
 .div-html {
   display: flex;
   width: 200px;
@@ -314,47 +300,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.div-inicial-html {
-  display: flex;
-  width: 100%;
-  height: 50px;
-
-  background: transparent;
-  color: rgb(187, 0, 47);
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
-  border-top: 2px solid #fff;
-  border-radius: 15px;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-}
-
 .div-js {
   display: flex;
   width: 200px;
   margin-bottom: 2em;
   align-items: center;
   flex-direction: column;
-}
-.div-inicial-js {
-  display: flex;
-  width: 100%;
-  height: 50px;
-
-  background: transparent;
-  color: rgb(187, 0, 47);
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
-  border-top: 2px solid #fff;
-  border-radius: 15px;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
 }
 .div-react {
   display: flex;
@@ -363,27 +314,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.div-inicial-react {
-  display: flex;
-  width: 100%;
-  height: 50px;
-
-  background: transparent;
-  color: rgb(187, 0, 47);
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
-  border-top: 2px solid #fff;
-  border-radius: 15px;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-}
 .img-react {
   width: 90%;
 }
-
 .div-segunda-habilidades {
   display: flex;
   width: 100%;
@@ -396,28 +329,24 @@ body {
   justify-content: center;
   transition: 0.5s;
 }
-
 .div-css:hover .div-inicial-css {
   transform: scale(1.1);
 }
 .div-css:hover .div-segunda-habilidades {
   transform: scale(1.1);
 }
-
 .div-html:hover .div-inicial-html {
   transform: scale(1.1);
 }
 .div-html:hover .div-segunda-habilidades {
   transform: scale(1.1);
 }
-
 .div-js:hover .div-inicial-js {
   transform: scale(1.1);
 }
 .div-js:hover .div-segunda-habilidades {
   transform: scale(1.1);
 }
-
 .div-react:hover .div-inicial-react {
   transform: scale(1.1);
 }
@@ -447,7 +376,6 @@ body {
   padding-top: 100px;
   border-bottom: 2px solid #fff;
 }
-
 .card {
   display: flex;
   padding: 10px;
@@ -462,54 +390,47 @@ body {
 .card:hover {
   transform: scale(1.1);
 }
-
 .card-img-wrapper {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
 }
-
 .card-img-wrapper img {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
-  opacity: 0.8;
   transition: opacity 0.3s;
 }
-
 .card:hover .card-img-wrapper img {
-  opacity: 0.4;
+  opacity: 0.1;
+  background-color: #000000;
 }
-
 .card-info {
   position: absolute;
   bottom: 0;
   opacity: 0;
   visibility: hidden;
   padding: 2rem;
+
   text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
   transition: all 0.3s;
 }
-
 .card-info h2 {
   font-size: 2rem;
   font-weight: 500;
   color: #eee;
 }
-
 .card-info h3 {
   font-weight: bolder;
   color: rgb(187, 0, 47);
   margin-bottom: 1.5rem;
 }
-
 .card-info p {
   color: #eee;
   font-weight: 400;
   width: 80%;
   margin-bottom: 2rem;
 }
-
 .cust_btn {
   text-align: center;
   color: #fff;
@@ -520,7 +441,6 @@ body {
   display: inline-block;
   outline: none;
 }
-
 .botao {
   width: 90px;
   height: 40px;
@@ -555,7 +475,6 @@ body {
   width: 100%;
   transition: 800ms ease all;
 }
-
 .card:hover .card-info {
   bottom: 2rem;
   opacity: 1;
@@ -574,7 +493,6 @@ body {
   padding: 100px 0;
   background: #0a051b;
 }
-
 .conteudo-nomes-contatos {
   display: flex;
   width: 100%;
@@ -587,14 +505,12 @@ body {
 .entre-contato {
   color: #ffff;
 }
-
 .titulo-da-div-contatos {
   font-weight: bold;
   font-size: 18px;
-  color: rgb(187, 0, 47);
+  color: #bb002f;
   display: flex;
 }
-
 .links-contatos {
   display: flex;
   justify-content: space-evenly;
@@ -603,37 +519,33 @@ body {
   padding: 80px;
   box-sizing: border-box;
 }
-
 a {
   color: #ffffff;
 }
-
 .contatos-primeira-coluna {
   display: flex;
   justify-content: space-around;
   margin-left: 15px;
   gap: 30px;
 }
-
 .contatos-segunda-coluna {
   display: flex;
   justify-content: space-around;
   margin-left: 15px;
   gap: 30px;
 }
-
 .contato {
   display: flex;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-top: 30px;
   color: #ffffff;
   cursor: pointer;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #ffff;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
+  border-right: 2px solid #bb002f;
+  border-left: 2px solid #bb002f;
   border-top: 2px solid #ffff;
   border-radius: 15px;
   align-items: center;
@@ -643,28 +555,27 @@ a {
 .contato:hover {
   transform: scale(1.2);
 }
-
 .logo-do-git {
-  width: 38px;
-  height: 38px;
+  width: 20px;
+  height: 20px;
   left: 731px;
   top: 3324px;
 }
 .logo-do-gmail {
-  width: 38px;
-  height: 38px;
+  width: 20px;
+  height: 20px;
   left: 731px;
   top: 3324px;
 }
 .logo-do-whatsapp {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   left: 731px;
   top: 3324px;
 }
 .logo-do-linkedin {
-  width: 38px;
-  height: 38px;
+  width: 20px;
+  height: 20px;
   left: 731px;
   top: 3324px;
 }
@@ -690,7 +601,6 @@ footer {
   border: 1px solid rgb(187, 0, 47);
   box-sizing: border-box;
   backdrop-filter: blur(200px);
-
   color: #ffffff;
 }
 
