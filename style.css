@@ -263,21 +263,20 @@ body {
 .div-habilidades {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
+  gap: 40px;
+  width: 90%;
 }
-.div-css {
+.habilidade {
   display: flex;
   width: 200px;
   margin-bottom: 2em;
   align-items: center;
   flex-direction: column;
+  transition: 0.5s;
 }
-.div-inicial-css,
-.div-inicial-html,
-.div-inicial-js,
-.div-inicial-react {
+.div-inicial-habilidade {
   display: flex;
   width: 100%;
   height: 50px;
@@ -291,30 +290,9 @@ body {
   border-radius: 15px;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  
 }
-.div-html {
-  display: flex;
-  width: 200px;
-  margin-bottom: 2em;
-  align-items: center;
-  flex-direction: column;
-}
-.div-js {
-  display: flex;
-  width: 200px;
-  margin-bottom: 2em;
-  align-items: center;
-  flex-direction: column;
-}
-.div-react {
-  display: flex;
-  width: 200px;
-  margin-bottom: 2em;
-  align-items: center;
-  flex-direction: column;
-}
-.img-react {
+.img-habilidade {
   width: 90%;
 }
 .div-segunda-habilidades {
@@ -329,31 +307,9 @@ body {
   justify-content: center;
   transition: 0.5s;
 }
-.div-css:hover .div-inicial-css {
+.habilidade:hover {
   transform: scale(1.1);
 }
-.div-css:hover .div-segunda-habilidades {
-  transform: scale(1.1);
-}
-.div-html:hover .div-inicial-html {
-  transform: scale(1.1);
-}
-.div-html:hover .div-segunda-habilidades {
-  transform: scale(1.1);
-}
-.div-js:hover .div-inicial-js {
-  transform: scale(1.1);
-}
-.div-js:hover .div-segunda-habilidades {
-  transform: scale(1.1);
-}
-.div-react:hover .div-inicial-react {
-  transform: scale(1.1);
-}
-.div-react:hover .div-segunda-habilidades {
-  transform: scale(1.1);
-}
-
 /* conteudo quartenario - projetos */
 
 .projetos {
@@ -588,7 +544,6 @@ a {
 .botao-rede:hover {
   transition: 0.5s all;
 }
-
 /*---- rodapé---- */
 footer {
   display: flex;
@@ -598,18 +553,16 @@ footer {
   gap: 30px;
   padding: 25px;
   background: #160c30;
-  border: 1px solid rgb(187, 0, 47);
+  border-top: 1px solid rgb(187, 0, 47);
   box-sizing: border-box;
   backdrop-filter: blur(200px);
   color: #ffffff;
 }
-
 @media (max-width: 1000px) {
   .class-main {
     padding: 0px;
     padding-top: 70px;
   }
-
   #header {
     display: flex;
     width: 100%;
@@ -617,7 +570,6 @@ footer {
     align-items: center;
     position: fixed;
   }
-
   #menu {
     display: block;
     position: absolute;
@@ -691,23 +643,19 @@ footer {
   .principal-meunome {
     font-size: 40px;
   }
-
   .principal-h3 {
     font-size: 15px;
   }
   .img-bemvindo {
     display: none;
   }
-
   .titulos-h1 {
     font-size: 30px;
   }
-
   .entre-contato {
     font-size: 30px;
     padding-top: 20px;
   }
-
   .sessao-projetos {
     width: 100%;
   }
@@ -719,7 +667,6 @@ footer {
   .conteudo-quemsou {
     flex-direction: column;
   }
-
   .texto-minhavida {
     width: 100%;
     margin-right: 0;
@@ -730,14 +677,6 @@ footer {
   }
   .meu-texto {
     margin-bottom: 80px;
-  }
-  .div-habilidades {
-    justify-content: space-around;
-  }
-}
-@media (max-width: 500px) {
-  .div-habilidades {
-    justify-content: center;
   }
 }
 @media (max-width: 450px) {
@@ -755,13 +694,11 @@ footer {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(58, 58, 58);
   border-radius: 5px;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #0f0f0f;
