@@ -1,7 +1,6 @@
 /*====== reset css ======*/
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -18,7 +17,7 @@ body {
   justify-content: space-around;
   padding: 20px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1rem;
   z-index: 3;
   background: linear-gradient(
     30deg,
@@ -67,21 +66,16 @@ body {
   flex-direction: column;
   gap: 100px;
   position: relative;
-  padding: 100px;
-  padding-bottom: 0px;
-  padding-top: 100px;
+  padding: 100px 100px 0;
 }
 
 /* conteudo principal */
 
 .conteudo-principal {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  padding: 100px 0;
   border-bottom: 2px solid #fff;
-  gap: 90px;
+  padding: 100px 0;
 }
 .principal-nomes {
   display: flex;
@@ -92,18 +86,19 @@ body {
 }
 .principal-textos {
   display: flex;
+  align-items: center;
   width: 100%;
   flex-direction: column;
   gap: 30px;
 }
 .principal-h1 {
   font-weight: normal;
-  font-size: 38px;
+  font-size: 1rem;
   color: #fff;
 }
 .principal-meunome {
   font-weight: bold;
-  font-size: 55px;
+  font-size: 2rem;
   color: #bb002f;
   width: 100%;
 }
@@ -111,7 +106,7 @@ body {
   border-right: 2px solid rgb(150, 151, 150);
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1rem;
   color: rgb(150, 151, 150);
   white-space: nowrap;
   overflow: hidden;
@@ -140,16 +135,17 @@ body {
   display: flex;
   text-align: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
-.botao-contato {
+.div-botoes a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  height: 69px;
+  width: 30%;
+  height: 49px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   transition: 0.5s;
   border-bottom: 2px solid #fff;
@@ -160,28 +156,7 @@ body {
   background: transparent;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
 }
-.botao-curriculo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  height: 69px;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.5s;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #bb002f;
-  border-left: 2px solid #bb002f;
-  border-top: 2px solid #fff;
-  border-radius: 25px;
-  background: transparent;
-  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
-}
-.botao-contato:hover {
-  transform: scale(1.1);
-}
-.botao-curriculo:hover {
+.div-botoes a:hover {
   transform: scale(1.1);
 }
 .icon-download {
@@ -190,42 +165,23 @@ body {
 }
 .img-bemvindo {
   display: flex;
-  border-radius: 50% 20% 60% 40% / 60% 20% 80% 40%;
-  width: 40%;
-  height: 40%;
+  border-radius: 10px;
+  width: 35%;
 }
 
 /* conteudo secundario - quem sou */
 
 .conteudo-quemsou {
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 80%;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 100px 0;
-  padding-bottom: 0px;
-  border-bottom: 2px solid #fff;
 }
 .div-imagem-quemsou {
   display: flex;
 }
-.imagem-quemsou {
-  display: flex;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  margin: 0 0 150px 0;
-}
-.texto-minhavida {
-  display: flex;
-  flex-direction: column;
-  margin-right: 2em;
-  align-items: flex-start;
-  width: 45%;
-}
 .titulos-h1 {
   display: flex;
+  text-align: center;
   font-weight: bold;
   font-size: 40px;
   color: #fff;
@@ -236,7 +192,7 @@ body {
   border-radius: 5px;
   font-weight: 500;
   letter-spacing: 2px;
-  width: 60%;
+  width: 100%;
   font-size: 17px;
   color: #0e0e0e;
   padding: 8px;
@@ -290,10 +246,9 @@ body {
   border-radius: 15px;
   align-items: center;
   justify-content: center;
-  
 }
 .img-habilidade {
-  width: 90%;
+  width: 50%;
 }
 .div-segunda-habilidades {
   display: flex;
@@ -372,11 +327,12 @@ body {
   transition: all 0.3s;
 }
 .card-info h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #eee;
 }
 .card-info h3 {
+  font-size: 0.8rem;
   font-weight: bolder;
   color: rgb(187, 0, 47);
   margin-bottom: 1.5rem;
@@ -466,6 +422,7 @@ body {
   font-size: 18px;
   color: #bb002f;
   display: flex;
+  text-align: center;
 }
 .links-contatos {
   display: flex;
@@ -511,25 +468,7 @@ a {
 .contato:hover {
   transform: scale(1.2);
 }
-.logo-do-git {
-  width: 20px;
-  height: 20px;
-  left: 731px;
-  top: 3324px;
-}
-.logo-do-gmail {
-  width: 20px;
-  height: 20px;
-  left: 731px;
-  top: 3324px;
-}
-.logo-do-whatsapp {
-  width: 30px;
-  height: 30px;
-  left: 731px;
-  top: 3324px;
-}
-.logo-do-linkedin {
+.contato img {
   width: 20px;
   height: 20px;
   left: 731px;
@@ -548,20 +487,17 @@ a {
 footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  text-align: center;
   width: 100%;
-  gap: 30px;
   padding: 25px;
   background: #160c30;
   border-top: 1px solid rgb(187, 0, 47);
   box-sizing: border-box;
-  backdrop-filter: blur(200px);
   color: #ffffff;
 }
 @media (max-width: 1000px) {
   .class-main {
-    padding: 0px;
-    padding-top: 70px;
+    padding: 70px 30px 0;
   }
   #header {
     display: flex;
@@ -635,7 +571,8 @@ footer {
     top: -7px;
   }
   .conteudo-principal {
-    flex-direction: column-reverse;
+    margin-top: 50px;
+    flex-direction: column;
   }
   .principal-h1 {
     font-size: 25px;
@@ -650,44 +587,24 @@ footer {
     display: none;
   }
   .titulos-h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
-  .entre-contato {
-    font-size: 30px;
-    padding-top: 20px;
+  .div-botoes {
+    justify-content: space-between;
+  }
+  .div-botoes a {
+    width: 40%;
+  }
+  .conteudo-quemsou {
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
   }
   .sessao-projetos {
     width: 100%;
   }
   .cards {
     display: flex;
-  }
-}
-@media (max-width: 800px) {
-  .conteudo-quemsou {
-    flex-direction: column;
-  }
-  .texto-minhavida {
-    width: 100%;
-    margin-right: 0;
-    align-items: center;
-  }
-  .imagem-quemsou {
-    margin: 0;
-  }
-  .meu-texto {
-    margin-bottom: 80px;
-  }
-}
-@media (max-width: 450px) {
-  .conteudo-nomes-contatos {
-    width: 90%;
-  }
-  .links-contatos {
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    flex-direction: column;
   }
 }
 /* width */

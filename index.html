@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <style src="style.css"></style>
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <title>Euller Trindade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -30,7 +34,6 @@
         </button>
         <ul id="menu">
           <li><a href="#id-main"> Início </a></li>
-          <li><a href="#id-quemsou"> Quem sou? </a></li>
           <li><a href="#id-hab"> Habilidades </a></li>
           <li><a href="#id-projetos"> Projetos </a></li>
           <li><a href="#id-contatos"> Contatos </a></li>
@@ -41,6 +44,7 @@
       <section class="conteudo-principal" id="id-main">
         <div class="principal-nomes">
           <div class="principal-textos">
+            <img class="img-bemvindo" src="./assets/img/minhaFoto.jpg" alt="" />
             <h1 class="principal-h1">
               &lt;Olá, me chamo
               <br />
@@ -51,12 +55,8 @@
           </div>
 
           <div class="div-botoes">
-            <a class="botao-contato" href="#id-contatos">Contato</a>
-            <a
-              class="botao-curriculo"
-              href="./assets/curriculo/Euller Trindade.pdf"
-              download
-            >
+            <a href="#id-contatos">Contato</a>
+            <a href="./assets/curriculo/Euller Trindade.pdf" download>
               Currículo
               <ion-icon
                 class="icon-download"
@@ -65,29 +65,16 @@
             </a>
           </div>
         </div>
-        <img class="img-bemvindo" src="./assets/img/minhaFoto.jpg" alt="" />
-      </section>
-
-      <section class="conteudo-quemsou" id="id-quemsou">
-        <div class="texto-minhavida">
-          <h1 class="titulos-h1">Quem Sou?</h1>
-
-          <div class="div-imagemquemsou">
-            <img
-              src="./assets/img/quem-sou.png"
-              alt="Imagem quem sou"
-              class="imagem-quemsou"
-            />
-          </div>
-        </div>
-        <p class="meu-texto">
-          <br />
-          Olá, me chamo <span>Euller!</span> Atualmente tenho 23 anos, sou uma
-          pessoa apaixonada por tecnologia, animes e jogos, amo conhecer novas
-          pessoas e fazer amizades. em novembro 2021 iniciei meus estudos em
-          <span>desenvolvimento front-end</span> e estou em busca de uma
-          oportunidade para colaborar com minhas hards e softwares skills.
-        </p>
+        <section class="conteudo-quemsou">
+          <p class="meu-texto">
+            <br />
+            Olá, me chamo <span>Euller!</span> Atualmente tenho 23 anos, sou uma
+            pessoa apaixonada por tecnologia, animes e jogos, amo conhecer novas
+            pessoas e fazer amizades. em novembro 2021 iniciei meus estudos em
+            <span>desenvolvimento front-end</span> e estou em busca de uma
+            oportunidade para colaborar com minhas hards e softwares skills.
+          </p>
+        </section>
       </section>
 
       <section class="conteudo-habilidades" id="id-hab">
@@ -100,7 +87,11 @@
             </div>
 
             <div class="div-segunda-habilidades">
-              <img src="./assets/img/logos_css-3.png" class="img-hab" />
+              <img
+                class="img-habilidade"
+                src="./assets/img/logo_css.png"
+                class="img-hab"
+              />
             </div>
           </div>
 
@@ -110,7 +101,7 @@
             </div>
 
             <div class="div-segunda-habilidades">
-              <img src="./assets/img/logos_html-5.png" />
+              <img class="img-habilidade" src="./assets/img/logo_html.png" />
             </div>
           </div>
 
@@ -119,7 +110,7 @@
               <p class="titulo-box">JAVASCRIPT</p>
             </div>
             <div class="div-segunda-habilidades">
-              <img src="./assets/img/logos_javascript.png" />
+              <img class="img-habilidade" src="./assets/img/logo_js.png" />
             </div>
           </div>
 
@@ -128,7 +119,7 @@
               <p class="titulo-box">REACT</p>
             </div>
             <div class="div-segunda-habilidades">
-              <img class="img-habilidade" src="./assets/img/React_logo.png" />
+              <img class="img-habilidade" src="./assets/img/logo_react.png" />
             </div>
           </div>
           <div class="habilidade div">
@@ -136,7 +127,7 @@
               <p class="titulo-box">GIT</p>
             </div>
             <div class="div-segunda-habilidades">
-              <img class="img-habilidade"  src="./assets/img/logo_git.png" />
+              <img class="img-habilidade" src="./assets/img/logo_git.png" />
             </div>
           </div>
           <div class="habilidade div">
@@ -145,6 +136,25 @@
             </div>
             <div class="div-segunda-habilidades">
               <img class="img-habilidade" src="./assets/img/logo_github.png" />
+            </div>
+          </div>
+          <div class="habilidade div">
+            <div class="div-inicial-habilidade">
+              <p class="titulo-box">SASS</p>
+            </div>
+            <div class="div-segunda-habilidades">
+              <img class="img-habilidade" src="./assets/img/logo_sass.png" />
+            </div>
+          </div>
+          <div class="habilidade div">
+            <div class="div-inicial-habilidade">
+              <p class="titulo-box">BOOTSTRAP</p>
+            </div>
+            <div class="div-segunda-habilidades">
+              <img
+                class="img-habilidade"
+                src="./assets/img/logo_bootstrap.png"
+              />
             </div>
           </div>
         </div>
@@ -222,11 +232,10 @@
             </div>
             <div class="card-info">
               <h2>Rocketpay</h2>
-              <h3>HTML, CSS, Javascript, JSON, NODE, IMASK.</h3>
+              <h3>HTML, CSS, JAVASCRIPT, JSON, NODE, IMASK.</h3>
               <p>
                 O Rocketpay é um componente que simula o formulário de
-                preenchimento de cartão de crédito, onde é possível adicionar
-                máscara aos inputs e atualizar elementos HTML via DOM.
+                preenchimento de cartão de crédito.
               </p>
               <a
                 href="https://explorer-lab-sigma-sepia.vercel.app/"
@@ -246,27 +255,26 @@
           <div class="card">
             <div class="card-img-wrapper">
               <img
-                src=".//assets/img/imc.png"
+                src=".//assets/img/mult-form.png"
                 alt="imagem do projeto calculadora-imc"
               />
             </div>
             <div class="card-info">
-              <h2>Calculadora-IMC</h2>
-              <h3>HTML, CSS, Javascript.</h3>
+              <h2>MULTISTAP FORM</h2>
+              <h3>REACT, TYPESCRIPT, STYLED-COMPONENTS.</h3>
               <p>
-                Projeto desenvolvido com HTML, CSS e Javascript. <br />
-                Preencha todos os campos e descubra qual é seu índice de massa
-                corporal.
+                Formulário multi-etapas que simula o cadastro de um
+                desenvolvedor.
               </p>
               <a
-                href="https://euller-trindade.github.io/calculadora-v1.0/"
+                href="https://multi-form-lemon.vercel.app/"
                 class="cust_btn botao"
                 target="_blank"
               >
                 Website
               </a>
               <a
-                href="https://github.com/Euller-trindade/calculadora-v1.0"
+                href="https://github.com/Euller-trindade/Multi-Form"
                 class="cust_btn botao"
                 target="_blank"
                 >GitHub
@@ -281,8 +289,8 @@
               />
             </div>
             <div class="card-info">
-              <h2>Estimate</h2>
-              <h3>React.</h3>
+              <h2>ESTIMATE</h2>
+              <h3>REACT.</h3>
               <p>
                 Projeto desenvolvido com React em que você pode gerenciar os
                 custos dos seus projetos.
@@ -298,20 +306,26 @@
           <div class="card">
             <div class="card-img-wrapper">
               <img
-                src=".//assets/img/filmes-st.png"
+                src=".//assets/img/clone-netflix.png"
                 alt="imagem do projeto Estimate"
               />
             </div>
             <div class="card-info">
-              <h2>FILMES ST</h2>
-              <h3>React.</h3>
+              <h2>NETFLIX CLONE</h2>
+              <h3>REACT.</h3>
               <p>
-                Projeto com informações de filmes desenvolvido com React,
-                consumindo dados de uma API.
+                Clone da Netflix com tela de login e funcionalidade de assitir
+                ao trailer do filme ou série escolhido.
               </p>
 
               <a
-                href="https://github.com/Euller-trindade/filmes"
+                href="https://netflix-clone-weld-sigma.vercel.app/"
+                class="cust_btn botao"
+                target="_blank"
+                >Website
+              </a>
+              <a
+                href="https://github.com/Euller-trindade/netflix-clone"
                 class="cust_btn botao"
                 target="_blank"
                 >GitHub
@@ -332,11 +346,7 @@
           <div class="links-contatos">
             <div class="contatos-primeira-coluna">
               <div class="contato">
-                <img
-                  src="./assets/img/git.png"
-                  alt="logo o git"
-                  class="logo-do-git"
-                />
+                <img src="./assets/img/github.png" alt="logo o github" />
                 <a
                   href="https://github.com/Euller-trindade"
                   target="_blank"
@@ -345,11 +355,7 @@
                 </a>
               </div>
               <div class="contato">
-                <img
-                  src="./assets/img/linkedin.png"
-                  alt="logo do linkedin"
-                  class="logo-do-linkedin"
-                />
+                <img src="./assets/img/linkedin.png" alt="logo do linkedin" />
                 <a
                   href="https://www.linkedin.com/in/euller-trindade/"
                   target="_blank"
@@ -361,11 +367,7 @@
 
             <div class="contatos-segunda-coluna">
               <div class="contato">
-                <img
-                  src="./assets/img/gmail.png"
-                  alt="logo do gmail"
-                  class="logo-do-gmail"
-                />
+                <img src="./assets/img/gmail.png" alt="logo do gmail" />
                 <a
                   href="mailto:eullertrindade2000@gmail.com"
                   target="_blank"
@@ -375,11 +377,7 @@
               </div>
 
               <div class="contato">
-                <img
-                  src="./assets/img/whatsapp_logo.png"
-                  alt="logo do whatsapp"
-                  class="logo-do-whatsapp"
-                />
+                <img src="./assets/img/whatsapp.png" alt="logo do whatsapp" />
                 <a
                   href="https://api.whatsapp.com/send?phone=5579998438276"
                   target="_blank"
